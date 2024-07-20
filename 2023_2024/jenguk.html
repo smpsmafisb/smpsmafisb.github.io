@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>INPUT DATA PENJENGUKKAN</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.lama {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.contact-us {
+  background: #f8f4e5;
+  padding: 35px 75px;
+  border: 2px solid black;
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid black;
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: black;
+}
+
+select {
+  display: block;
+  width: 100%;
+  font-size: 14pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid black;
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: black;
+}
+
+input:focus {
+  border-bottom: 5px solid #ffa580;
+}
+
+select:focus {
+  border-bottom: 5px solid #ffa580;
+}
+
+
+button {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px 1px #95a4ff, 3px 3px 1px 2px black;
+}
+button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+::selection {
+  background: #ffc8ff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 5px solid #95a4ff;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+  </style>
+</head>
+
+<body>
+  <div id="form-container">
+    <!-- akses link script app -->
+    <form action="https://script.google.com/macros/s/AKfycbyioaeQa5D5V-zEOu-rROiekxhHiKBSsRwqWqEu9IO5GbCU4u3K4HXr-NjXwm60crrz8w/exec" method="post">
+    <!-- end akses  -->
+
+     <div class="contact-us">
+  <form>
+	
+	<h2 class"text-center"> INPUT DATA JENGUK SISWA SAKIT</h2>
+	<br>
+	<!-- <input name="customerEmail" placeholder="Email" type="email" /> -->
+	<!-- <input name="customerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Phone" type="tel" /> -->
+
+
+	<select  placeholder="Wali Kelas " type="text" name="wali_kelas" id="wali_kelas" required>
+	  <option value="" disabled selected>Pilih Wali Kelas</option>
+	  <option value="FERNANDA DAFITTRA, S.Pd">FERNANDA DAFITTRA, S.Pd</option>
+	  <option value="RIKI MAULANA, S.Pd">RIKI MAULANA, S.Pd</option>
+	  <option value="YOGA OKTAVIANTO, S.Pd">YOGA OKTAVIANTO, S.Pd</option>
+	  <option value="AYU HIDAYAH PUTRI, S.Pd">AYU HIDAYAH PUTRI, S.Pd</option>
+	  <option value="NUR'AIN RAFRAF AZIZAH, S.Pd">NUR'AIN RAFRAF AZIZAH, S.Pd</option>
+	  <option value="MUTIARA, S.Pd">MUTIARA, S.Pd</option>
+	  <option value="ADE MAULANA ANWAR">ADE MAULANA ANWAR</option>
+	  <option value="HAMDAN">HAMDAN</option>
+	  <option value="HUSNEIDY SYAH ZIKRA, S.Pd">HUSNEIDY SYAH ZIKRA, S.Pd</option>
+	  <option value="YUCI ALINI PUTRI, S.Pd">YUCI ALINI PUTRI, S.Pd</option>
+	  <option value="NURLELA, S.Pd.I">NURLELA, S.Pd.I</option>
+	</select>
+
+	<input placeholder="Nama Siswa" type="text" id="nama_siswa" name="nama_siswa" required>
+
+	
+	<select  placeholder="Kelas" type="text" name="kelas" id="kelas" required>
+	  <option value="" disabled selected>Pilih Kelas</option>
+	  <option value="7 Al Qasim">7 Al Qasim</option>
+	  <option value="7 Juwairiyah">7 Juwairiyah</option>
+	  <option value="8 Abdullah">8 Abdullah</option>
+	  <option value="8 Maimunah">8 Maimunah</option>	  
+	  <option value="9 Ibrahim">9 Ibrahim</option>
+	  <option value="9 Ummu Habibah">9 Ummu Habibah</option>
+	  <option value="10 Jabir">10 Jabir</option>
+	  <option value="10 Khaulah">10 Khaulah</option>	  
+	  <option value="11 Tsabit">11 Tsabit</option>
+	  <option value="11 Syifa">11 Syifa</option>
+	  <option value="12 Haritsah">12 Haritsah</option>
+	</select>
+
+	<input placeholder="Jam Pergi" type="time" id="jam_pergi" name="jam_pergi" required>
+	<input placeholder="Jam Pulang" type="time" id="jam_pulang" name="jam_pulang" required>
+	<input placeholder="Keterangan" type="text" id="ket" name="ket" required>
+	<button type="submit">Simpan Data</button><br>
+	<a class="lama" href="smpsmafisb.github.io" target="_blank"><p>back</p></a>
+  </form>
+</div>
+  </div>
+
+</body>
+</html>
