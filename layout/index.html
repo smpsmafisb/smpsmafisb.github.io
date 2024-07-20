@@ -13,27 +13,8 @@
   <link rel="stylesheet" href="dist/css/adminlte.min.css">
   <!-- overlayScrollbars -->
   <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body class="hold-transition sidebar-mini layout-fixed" data-panel-auto-height-mode="height">
-  <script>
-      $(document).ready(function() {
-      // Menggunakan jQuery untuk memuat dan meng-extend konten dari subpage.html
-      $('#navbar').load('navbar.html #subpage-navbar');
-      });
-      $(document).ready(function() {
-      // Menggunakan jQuery untuk memuat dan meng-extend konten dari subpage.html
-      $('#sidebar').load('sidebar.html #subpage-sidebar');
-      });
-      $(document).ready(function() {
-      // Menggunakan jQuery untuk memuat dan meng-extend konten dari subpage.html
-      $('#content').load('dashboard.html #subpage-content');
-      });
-      $(document).ready(function() {
-      // Menggunakan jQuery untuk memuat dan meng-extend konten dari subpage.html
-      $('#footer').load('footer.html #subpage-footer');
-      });
-  </script>
 <div class="wrapper">
 
   <!-- Main Navbar Container -->
@@ -60,7 +41,8 @@
 <!-- ./wrapper -->
 
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="plugins/jquery/jquery.min.js"></script> -->
 <!-- jQuery UI 1.11.4 -->
 <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -75,5 +57,24 @@
 <script src="dist/js/adminlte.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="dist/js/demo.js"></script>
+
+<script>
+  $(document).ready(function() {
+  // Menggunakan jQuery untuk memuat dan meng-extend konten dari subpage.html
+  $('#navbar').load('navbar.html #subpage-navbar');
+  });
+  $(document).ready(function() {
+  // Menggunakan jQuery untuk memuat dan meng-extend konten dari subpage.html
+  $('#sidebar').load('sidebar.html #subpage-sidebar');
+  });
+  $(document).ready(function() {
+  // Menggunakan jQuery untuk memuat dan meng-extend konten dari subpage.html
+  $('#content').load('dashboard.html #subpage-content');
+  });
+  $(document).ready(function() {
+  // Menggunakan jQuery untuk memuat dan meng-extend konten dari subpage.html
+  $('#footer').load('footer.html #subpage-footer');
+  });
+</script>
 </body>
 </html>
