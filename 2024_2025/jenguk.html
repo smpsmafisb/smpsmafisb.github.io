@@ -5,7 +5,7 @@
   <title>INPUT DATA PENJENGUKKAN</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
-  <style>
+<style>
     @import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
 * {
   margin: 0;
@@ -20,6 +20,16 @@ body {
   display: grid;
   align-items: center;
   justify-items: center;
+}
+
+#myDIV {
+  height:auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid: 10px / auto auto;
+}
+#myDIV div {
+  text-align: center;
 }
 
 .lama {
@@ -110,6 +120,7 @@ input:-webkit-autofill:focus {
 </head>
 
 <body>
+  
   <div id="form-container">
     <!-- akses link script app -->
     <form action="https://script.google.com/macros/s/AKfycbyioaeQa5D5V-zEOu-rROiekxhHiKBSsRwqWqEu9IO5GbCU4u3K4HXr-NjXwm60crrz8w/exec" method="post">
@@ -161,7 +172,13 @@ input:-webkit-autofill:focus {
 	<input placeholder="Jam Pulang" type="time" id="jam_pulang" name="jam_pulang" required>
 	<input placeholder="Keterangan" type="text" id="ket" name="ket" required>
 	<button type="submit">Simpan Data</button><br>
-	<a class="lama" href="smpsmafisb.github.io" target="_blank"><p>back</p></a>
+  
+  <div id="myDIV">
+    <div class="item1"><a class="lama" href="https://docs.google.com/spreadsheets/d/1RMdidD0x-l4hnsD-qObsx1OFbklU7HHqg9UBXgWPJPg/edit?usp=sharing" target="_blank"><p>Cek Data</p></a></div>
+    <div class="item2">
+	<a class="lama" href="/" target="_blank"><p>back</p></a></div>
+  </div>
+	
   </form>
 </div>
   </div>
